@@ -1,0 +1,97 @@
+<form action="ejemplo.php" method="get">
+
+    <head>
+        <style>
+            form {
+                /* Centrar el formulario en la página */
+                margin: 45 auto;
+                /*centrado */
+                width: 400px;
+                /* Esquema del formulario */
+                padding: 2em;
+                border: 2px solid rgb(23, 3, 202);
+                /*Color borde*/
+                border-radius: 2em;
+                /*Reduccion de esquinas*/
+            }
+
+            input,
+            textarea {
+                /*  Para  asegurarse  de  que  todos  los  campos  de  texto  tienen  la  misma  configuración  de letraPor defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+                font: 1em sans-serif;
+                /* Tamaño uniforme del campo de texto */
+                box-sizing: border-box;
+                /* Hacer coincidir los bordes del campo del formulario */
+                border: 2px solid rgb(32, 113, 167);
+            }
+
+            input:focus,
+            textarea:focus {
+                /* Destacado adicional para elementos que tienen el cursor */
+                border-color: rgb(17, 0, 255);
+            }
+
+            textarea {
+                /* Alinear los campos de texto multilínea con sus etiquetas */
+                vertical-align: top;
+                /* Proporcionar espacio para escribir texto */
+                height: 10em;
+            }
+
+            .button {
+                /* Alinear los botones con los campos de texto */
+                padding-left: 185px;
+                /* mismo tamaño que los elementos de la etiqueta */
+            }
+
+            button {
+                /* Este margen adicional representa aproximadamente el mismo espacio que el espacioentre las etiquetas y sus campos de texto */
+                margin-left: .5em;
+            }
+        </style>
+
+    </head>
+
+    <div <div align="center" </div>
+
+        <title>Primer parcial</title>
+
+        <p><strong><em> Formulario de inscripción</em></strong></p>
+
+    </div>
+
+    <p>Primer nombre: <span style="color: red;">* <input type="text" name="nombre1" size="24" required></p>
+
+    <p>Segundo nombre: <input type="text" name="nombre2" size="22"></p>
+
+    <p>Primer apellido: <span style="color: red;">* <input type="text" name="apellido1" size="23" required></p>
+
+    <p>Segundo Apellido: <input type="text" name="apellido2" size="21"></p>
+
+    <div <div align="center" </div>
+
+        <p>Edad: <span style="color: red;">*  <input type="text" name="Edad" size="8" required </p>
+
+        <p>Sexo:
+            <input type="radio" name="hm" value="h" required> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+        </p>
+    </div>
+
+    <p>Correo electronico:<span style="color: red;">*  <input type="text" name="Correo electronico" size="20" required></p>
+
+    <p>Fecha de nacimiento: <span style="color: red;">* <input type="date" name="fecha" required></p>
+
+    <div <div align="center" </div>
+
+        <P>Hora de nacimeinto: <input type="time" name="hora"></P>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+
+        <p><em> Todos los campos con * son obligatorios</em></p>
+
+    </div>
+</form>

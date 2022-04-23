@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        h1 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        em {
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+        }
+    </style>
+    <title>Página HTML con divs</title>
+    <style>
+        form {
+            /* Centrar el formulario en la página */
+            margin: 45 auto;
+            /*centrado */
+            width: 500px;
+            /* Esquema del formulario */
+            padding: 2em;
+            border: 2px solid rgb(23, 1, 102);
+            /*Color borde*/
+            border-radius: 2em;
+            /*Reduccion de esquinas*/
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li+li {
+            margin-top: 2em;
+            /* Espacio entre casillas*/
+        }
+
+        label {
+            /* Tamaño y alineación uniforme */
+            display: inline-block;
+            width: 80px;
+            text-align: left;
+        }
+
+        input,
+        textarea {
+            /*  Para  asegurarse  de  que  todos  los  campos  de  texto  tienen  la  misma  configuración  de letraPor defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+            font: 1em sans-serif;
+            /* Tamaño uniforme del campo de texto */
+            width: 300px;
+            box-sizing: border-box;
+            /* Hacer coincidir los bordes del campo del formulario */
+            border: 2px solid rgb(32, 113, 167);
+        }
+
+        input:focus,
+        textarea:focus {
+            /* Destacado adicional para elementos que tienen el cursor */
+            border-color: rgb(17, 0, 255);
+        }
+
+        textarea {
+            /* Alinear los campos de texto multilínea con sus etiquetas */
+            vertical-align: top;
+            /* Proporcionar espacio para escribir texto */
+            height: 10em;
+        }
+
+        .button {
+            /* Alinear los botones con los campos de texto */
+            padding-left: 185px;
+            /* mismo tamaño que los elementos de la etiqueta */
+        }
+
+        button {
+            /* Este margen adicional representa aproximadamente el mismo espacio que el espacioentre las etiquetas y sus campos de texto */
+            margin-left: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div <div align="center" </div>
+        <div id="caja1" style="background-color:#ffffff;">
+            <br>
+            <h1><strong><em>Formulario</em></strong></h1>
+        </div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">
+                        <font face="Comic Sans MS">Nombre:</font>
+                    </label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul><br>
+            <ul>
+                <li class="button">
+                    <button type="submit">Enviar</button>
+                </li>
+                <ul />
+        </form>
+</body>
+
+</html>

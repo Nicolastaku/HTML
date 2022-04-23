@@ -1,0 +1,126 @@
+<form action="ejemplo.php" method="get">
+
+    <head>
+        <style>
+            form {
+                /* Centrar el formulario en la página */
+                margin: 45 auto;
+                /*centrado */
+                width: 400px;
+                /* Esquema del formulario */
+                padding: 2em;
+                border: 2px solid rgb(23, 3, 202);
+                /*Color borde*/
+                border-radius: 2em;
+                /*Reduccion de esquinas*/
+            }
+
+            input,
+            textarea {
+                /*  Para  asegurarse  de  que  todos  los  campos  de  texto  tienen  la  misma  configuración  de letraPor defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+                font: 1em sans-serif;
+                /* Tamaño uniforme del campo de texto */
+                box-sizing: border-box;
+                /* Hacer coincidir los bordes del campo del formulario */
+                border: 2px solid rgb(32, 113, 167);
+            }
+
+            input:focus,
+            textarea:focus {
+                /* Destacado adicional para elementos que tienen el cursor */
+                border-color: rgb(17, 0, 255);
+            }
+
+            textarea {
+                /* Alinear los campos de texto multilínea con sus etiquetas */
+                vertical-align: top;
+                /* Proporcionar espacio para escribir texto */
+                height: 10em;
+            }
+
+            .button {
+                /* Alinear los botones con los campos de texto */
+                padding-left: 185px;
+                /* mismo tamaño que los elementos de la etiqueta */
+            }
+
+            button {
+                /* Este margen adicional representa aproximadamente el mismo espacio que el espacioentre las etiquetas y sus campos de texto */
+                margin-left: .5em;
+            }
+        </style>
+    </head>
+
+    <div <div align="center" </div>
+        <!--Centrar todo-->
+
+        <title>Formulario</title>
+
+        <p><strong> Inicio de Sesión</strong></p>
+
+        <!--minlength="6" maxlength="20" minimo de caracteres y maximo -->
+
+        <p>Usuario: <input type="text" name="usuario" minlength="6" maxlength="20" required
+                placeholder="Escriba su Usuario" size="40"></p>
+
+        <p>Contraseña: <input type="password" name="password" minlength="6" maxlength="12" required
+                placeholder="Escriba su Contraseña" size="40"></p><br>
+
+        <!--size="37" cantidad de caracteres que caben -->
+        <!--required datos requeridos -->
+        <!--placeholder="Mensaje dentro del cuadro" -->
+
+        <p><strong><em> ¿ha olvidado su contraseña? </em></strong></p>
+
+        <p>Primer nombre: <input type="text" name="nombre1" size="24" required placeholder="*"></p>
+
+        <p>Segundo nombre: <input type="text" name="nombre2" size="22"></p>
+
+        <p>Primer apellido: <input type="text" name="apellido1" size="23" required placeholder="*"></p>
+
+        <p>Segundo Apellido: <input type="text" name="apellido2" size="21"></p>
+
+        <p>Nacionalidad: <input type="text" name="Nacionalidad" required placeholder="*" size="24"></p>
+
+        <p>Fecha de nacimiento: (*) <input type="date" name="fecha" required></p>
+        <!--Fecha codigo-->
+        <!--<p>Año de nacimiento: <input type="number" name="nacido" min="1900" required placeholder="*"></p> -->
+
+        <P>Hora de nacimeinto: <input type="time" name="hora"></P>
+        <!-- Casilla de hora-->
+
+        <br>
+        <p><strong><em>Tipo de documento</em></strong></p>
+        <input type="checkbox" name="casilla" checked>C.C<br>
+        <input type="checkbox" name="casilla">T.I<br>
+        <input type="checkbox" name="casilla">C.E<br>
+        <br>
+
+        <!--<p><em>Valore nuestros servicios:</em> <input type="range" name="rango" min="1" max="10" step="3"></p>-->
+        <!-- Barra de rango-->
+        <p><em>Valore nuestros servicios: (Malo, Regular, bueno)</em></p>
+        <input type="range" name="rango" min="1" max="3" list="lista-rango"><datalist id="lista-rango">
+            <option value="1" label="Malo">
+            <option value="2" label="Regular">
+            <option value="3" label="Bueno">
+        </datalist>
+        <br>
+        M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B<br>
+        <!--Etiqueta para M,R,B-->
+
+        <p>Sexo:
+            <input type="radio" name="hm" value="h" required> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>Edad:
+            <input type="radio" name="edad" value="menor"> Menor
+            <input type="radio" name="edad" value="adulto" required> Adulto
+        </p>
+
+        <p><em> Todos los campos con * son obligatorios</em></p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+</form>
